@@ -9,28 +9,67 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+<hr/> <!-- This adds a line between entries -->
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
+<div style="margin-bottom: 2rem;">
+  <h3 style="margin-bottom: 0.25rem; font-weight: 500 !important;">Runtime Safety through Adaptive Shielding: From Hidden Parameter Inference to Provable Guarantees</h3>
+  <p style="margin: 0.25rem 0;">
+    <strong>Minjae Kwon</strong>, Tyler Ingebrand, Ufuk Topcu, Lu Feng
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <em>Preprint</em><br/>
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <a href="https://arxiv.org/abs/2506.11033">paper</a> |
+    <a href="https://github.com/safe-autonomy-lab/AdaptiveShieldingFE">code</a> |
+    <a href="https://kmj1122.github.io/adaptive-shielding-project-page/">project page</a>
+  </p>
+</div>
+
+
+
+<!-- To add another paper, just copy the block above and paste it here -->
+<div style="margin-bottom: 2rem;">
+  <h3 style="margin-bottom: 0.25rem; font-weight: 500 !important;">Adaptive Reward Design for Reinforcement Learning</h3>
+  <p style="margin: 0.25rem 0;">
+    <b>Minjae Kwon</b>, Ingy ElSayed-Aly, Lu Feng
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <em>UAI 2025</em>
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <a href="https://arxiv.org/abs/2412.10917">paper</a> |
+    <a href="https://github.com/safe-autonomy-lab/AdaptiveRewardRL">code</a>
+  </p>
+</div>
+
+
+<div style="margin-bottom: 2rem;">
+  <h3 style="margin-bottom: 0.25rem; font-weight: 500 !important;">Recursive time series data augmentation</h3>
+  <p style="margin: 0.25rem 0;">
+    Amine Mohamed Aboussalah, <b>Minjae Kwon</b>, Raj G Patel, Cheng Chi, Chi-Guhn Lee
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <em>ICLR 2023</em>
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <a href="https://openreview.net/forum?id=5lgD4vU-l24s">paper</a>
+  </p>
+</div>
+
+
+<div style="margin-bottom: 2rem;">
+  <h3 style="margin-bottom: 0.25rem; font-weight: 500 !important;">On Nonnil-S-Noetherian Rings</h3>
+  <p style="margin: 0.25rem 0;">
+    <b>Minjae Kwon</b>, Jungwook Lim
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <em>Mathematics</em>
+  </p>
+  <p style="margin: 0.25rem 0;">
+    <a href="https://www.mdpi.com/2227-7390/8/9/1428">paper</a>
+  </p>
+</div>
 
 

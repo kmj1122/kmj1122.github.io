@@ -27,8 +27,11 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.5em 0 0.5em 0.5em;
     font-family: $sans-serif-narrow;
+    // Force masthead to stick to left edge
+    text-align: left !important;
+    margin-left: 0 !important;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -36,6 +39,9 @@
 
     nav {
       z-index: 10;
+      // Force navigation to stick to left edge
+      text-align: left !important;
+      margin-left: 0 !important;
     }
 
     a {
@@ -45,12 +51,31 @@
 }
 
 .masthead__menu {
+  // Force menu to stick to left edge
+  text-align: left !important;
+  margin-left: 0 !important;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+    // Force menu list to stick to left edge
+    text-align: left !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* Force navigation elements to stick to left edge */
+.greedy-nav {
+  text-align: left !important;
+  margin-left: 0 !important;
+  
+  .visible-links {
+    text-align: left !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
   }
 }
 
@@ -63,5 +88,16 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    // Force site title to stick to left edge
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    
+    a {
+      text-align: left !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      justify-content: flex-start !important;
+    }
   }
 }

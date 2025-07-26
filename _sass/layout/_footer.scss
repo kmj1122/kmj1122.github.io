@@ -60,9 +60,13 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  text-align: center;
 }
 
 .page__footer-follow {
+  // Hide the entire follow section
+  display: none !important;
+  
   ul {
     margin: 0;
     padding: 0;

@@ -1,0 +1,53 @@
+/* ==========================================================================
+   SIMPLE ORANGE THEME
+   ========================================================================== */
+
+/* Color codes used for the theme (orange-focused for warmth and visibility) */
+$primary-orange             : #ff7043;  // Main orange for accents and links
+$accent-orange              : #fb8c00;  // Brighter orange for hovers/highlights
+$light-orange               : #ffe0b2;  // Light orange for backgrounds/subtle accents
+$dark-orange                : #ef6c00;  // Darker orange for depth
+$darker-orange              : #d84315;  // Deepest orange for code/text
+
+$gray                       : #7a8288;  // Retained gray for neutral elements
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : #9ba1a6;
+$lighter-gray               : mix(#fff, $gray, 90%);
+
+/* Color codes used for the site (integrated with orange) */
+$danger-color               : #ee5f5b;  // Red unchanged
+$info-color                 : $accent-orange;  // Orange for info
+$notice-color               : $gray;  // Gray unchanged
+$success-color              : #62c462;  // Green unchanged
+$warning-color              : $primary-orange;  // Orange for warnings
+
+/* Other basic settings for the template (unchanged for simplicity) */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Simple orange light theme for the site */
+:root {
+    --global-base-color                 : #{$primary-orange};  // Orange base for prominence
+    --global-bg-color                   : #fff;  // White BG for readability
+    --global-footer-bg-color            : #{$light-orange};  // Light orange footer
+    --global-border-color               : #{$light-gray};  // Neutral borders
+    --global-dark-border-color          : #bdc1c4;
+    --global-code-background-color      : #{$light-orange};  // Light orange code BG
+    --global-code-text-color            : #{$darker-orange};  // Dark orange code text
+    --global-fig-caption-color          : mix(#fff, #{$dark-orange}, 25%);
+    --global-link-color                 : #{$accent-orange};  // Bright orange links
+    --global-link-color-hover           : #{$dark-orange};  // Darker hover
+    --global-link-color-visited         : mix(#fff, #{$primary-orange}, 25%);  
+    --global-masthead-link-color        : #{$dark-gray};  // Neutral masthead
+    --global-masthead-link-color-hover  : #{$primary-orange};  // Orange hover    
+    --global-text-color                 : #{$darker-gray};  // Dark text for contrast
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{$light-orange};  // Light orange tables
+}
