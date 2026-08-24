@@ -1,0 +1,6 @@
+{% comment %}
+  Homepage display: drop the proceedings "In" prefix so the venue line is
+  "International Conference on Machine Learning (ICML), 2026" rather than
+  "In International Conference on Machine Learning (ICML), 2026".
+{% endcomment %}
+{% assign entrytype = entrytype | replace: '<em>In ', '<em>' %}

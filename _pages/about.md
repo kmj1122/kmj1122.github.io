@@ -1,14 +1,38 @@
 ---
+layout: about
+title: about
 permalink: /
-title: "About Me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+# subtitle: PhD Candidate, <a href='https://engineering.virginia.edu/departments/computer-science'>Computer Science</a>, University of Virginia
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Charlottesville, VA</p>
+
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
 ---
 
-I am a PhD student at the University of Virginia, advised by Professor [Lu Feng](https://www.cs.virginia.edu/~lufeng/). My research focuses on developing safe and generalizable Reinforcement Learning (RL) agents.
+I am a PhD candidate in the Department of Computer Science at the University of Virginia,
+advised by [Prof. Lu Feng](https://www.cs.virginia.edu/~lufeng/). Previously, I received a PhD in
+mathematics from Kyungpook National University.
 
-My academic journey began in pure mathematics, with a focus on Ring Theory, a branch of commutative algebra. Back in the day, I wanted to pursue truths that would persist even beyond the end of humanity. But I came to realize that mathematics, though elegant and powerful, is also built upon axioms and it becomes increasingly abstract. It didn't feel like the kind of absolute truth I was searching for, even though I love describing math as the language of nature. So, I decided to focus on something useful for this era!
+My research asks one question: **how can learning systems adapt to changing environments
+while maintaining safety at runtime?** Training-time safety guarantees can break when deployment conditions differ from training. My work addresses this problem in three directions:
+- **Adaptive runtime safety** — safety wrappers that infer changes in the dynamics at deployment and adjust their safety margin under uncertainty, using basis-adaptive neural ODEs and conformal prediction without retraining the policy.
+- **Safe in-context adaptation** — frozen policies that adapt their strategy from
+  interaction history while respecting a safety budget, using methods such as safe algorithm distillation and latent Q-barrier filtering.
+- **Compositional safe adaptation** — agents that execute unseen compositions of
+  temporally structured tasks (specified in linear temporal logic) under distribution shift.
 
-In my free time, I enjoy trying new recipes and napping in a dark room.
+I study these problems in safety-critical domains, including robotic control in MuJoCo simulation environments and healthcare applications such as personalized diabetes management using physiological simulators.

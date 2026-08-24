@@ -1,0 +1,124 @@
+cv:
+  name: Minjae Kwon
+  label: PhD Candidate, Computer Science
+  email: hbt9su@virginia.edu
+  location: Charlottesville, VA
+  image: ""
+  summary: >-
+    PhD candidate at the University of Virginia working on safe adaptive decision-making
+    under distribution shift — safe reinforcement learning, in-context RL, runtime
+    shielding, and temporal-logic specifications, with applications to robotic control
+    and personalized diabetes management.
+
+  social_networks:
+    - network: GitHub
+      username: kmj1122
+    - network: Google Scholar
+      username: Mu2-H8AAAAAJ
+
+  sections:
+    Education:
+      - institution: University of Virginia
+        location: Charlottesville, VA
+        url: https://www.virginia.edu/
+        area: Computer Science
+        studyType: PhD Candidate
+        start_date: 2022
+        end_date: Expected May 2027
+        score: ""
+        courses: ""
+        highlights:
+          - "Thesis: Safe Decision-Making When the World Changes"
+          - "Advisor: Prof. Lu Feng"
+
+      - institution: Kyungpook National University
+        location: Daegu, South Korea
+        url: ""
+        area: Mathematics
+        studyType: PhD
+        start_date: 2017
+        end_date: 2022
+        score: ""
+        courses: ""
+        highlights:
+          - "Thesis: On a Generalized Class of Noetherian Rings"
+
+      - institution: Kyungpook National University
+        location: Daegu, South Korea
+        url: ""
+        area: Mathematics
+        studyType: B.S. and M.S.
+        start_date: 2011
+        end_date: 2017
+        score: ""
+        courses: ""
+        highlights: []
+
+    Research Experience:
+      - company: University of Virginia
+        position: Graduate Research Assistant
+        start_date: Aug 2022
+        end_date: Present
+        highlights:
+          - >-
+            Lead research on safe and generalizable reinforcement learning: runtime safety,
+            in-context RL, and deployment-time adaptation under distribution shift without
+            retraining.
+          - >-
+            Developed reward functions for reinforcement learning that incentivize partial
+            completion of tasks specified in linear temporal logic.
+      - company: University of Toronto
+        position: Visiting Scholar (Mitacs Globalink Research Award)
+        start_date: Sep 2021
+        end_date: Feb 2022
+        highlights:
+          - >-
+            Proposed a recursive time-series data augmentation method and proved bounds on
+            the augmented model's expected error.
+
+    Teaching Experience:
+      - company: University of Virginia
+        position: Teaching Assistant
+        start_date: 2023
+        end_date: 2025
+        highlights:
+          - >-
+            Cyber-Physical Systems: Formal Methods, Safety and Security
+            (CS 6763/SYS 6763), Spring 2024 and Spring 2025 — mentored final projects in
+            explainable and safe RL.
+          - "Artificial Intelligence (CS 4710), Fall 2023 and Fall 2025 — built the course's Google Colab workflow."
+      - company: Kyungpook National University
+        position: Teaching Assistant
+        start_date: 2015
+        end_date: 2021
+        highlights:
+          - >-
+            Teaching assistant and guest lecturer for twelve courses in mathematics,
+            including Modern Algebra, Calculus, Linear Algebra, and Set Theory and
+            Mathematical Logic.
+
+    Honors and Awards:
+      - company: ICML
+        position: Gold Reviewer Award
+        start_date: 2026
+        end_date: ""
+        highlights: []
+      - company: NRF of Korea and Mitacs
+        position: Globalink Research Award
+        start_date: 2021
+        end_date: ""
+        highlights: []
+      - company: Korean Mathematical Society
+        position: Silver Medal, 33rd Mathematics Competition for University Students
+        start_date: 2014
+        end_date: ""
+        highlights: []
+
+    Service:
+      - company: Program Committees and Journal Reviewing
+        position: Reviewer
+        start_date: 2024
+        end_date: Present
+        highlights:
+          - >-
+            ICML, NeurIPS, ICLR, AAAI, UAI, RLC, ICRA, HSCC/ICCPS, TMLR, and ACM TCPS.
