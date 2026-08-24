@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://kmj1122.github.io/sitemap.xml
